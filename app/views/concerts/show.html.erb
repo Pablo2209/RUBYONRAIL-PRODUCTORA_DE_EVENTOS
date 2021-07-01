@@ -1,0 +1,24 @@
+<h1>Concert Show</h1>
+
+<p>
+    <strong>Participants:</strong>
+    <%= @concert.participants %>
+</p>
+
+<p>
+    <strong>Concert Duration:</strong>
+    <%= @concert.duration %>
+</p>
+
+<p>
+    <strong>Concert Date:</strong>
+    <%= @concert.concert_date %>
+</p>
+
+<p>
+    <strong>Group:</strong>
+    <%= @concert.get_group_name %>
+<p>
+
+<%= link_to 'Edit', edit_concert_path(@concert) %>
+<%= link_to 'Back', concerts_path %>
